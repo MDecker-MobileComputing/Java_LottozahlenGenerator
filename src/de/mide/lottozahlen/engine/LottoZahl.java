@@ -8,7 +8,10 @@ package de.mide.lottozahlen.engine;
 @SuppressWarnings("rawtypes")
 public class LottoZahl implements Comparable {
 
-	private int    _lottozahl;
+	/** Eine gültige Lottozahl, z.B. Zahl aus 1..49 für deutsches Zahlenlotto. */
+	private int _lottozahl;
+	
+	/** Zufallszahl, nach der für das Durchmischen sortiert wird. */
 	private double _zufallszahl;
 	
 	

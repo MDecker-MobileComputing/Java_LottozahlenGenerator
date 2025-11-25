@@ -72,8 +72,9 @@ public class LottozahlenGenerator {
         
         Arrays.sort( ergebnisArray );
         
-    	return ergebnisArray;
+    		return ergebnisArray;
     }
+    
     
     /**
      * Zahlentipp für Lotto erzeugen unt als String zurückgegeben.
@@ -84,16 +85,16 @@ public class LottozahlenGenerator {
      */
     public String erzeugeTippAlsString() {
     	
-    	int[] tippArray = erzeugeTipp();
-    	
-    	StringBuffer sb = new StringBuffer();
-    	for ( int zahl : tippArray ) {
-    		
-    		sb.append( zahl );
-    		sb.append( '\t'  );
-    	}
-    	
-    	return sb.toString();
+	    	int[] tippArray = erzeugeTipp();
+	    	
+	    	StringBuffer sb = new StringBuffer();
+	    	for ( int zahl : tippArray ) {
+	    		
+	    		sb.append( zahl );
+	    		sb.append( '\t'  ); // Tabulator
+	    	}
+	    	
+	    	return sb.toString();
     }
 
 }
