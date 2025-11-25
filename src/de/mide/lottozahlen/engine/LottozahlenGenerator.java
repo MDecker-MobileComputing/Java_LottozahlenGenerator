@@ -58,18 +58,19 @@ public class LottozahlenGenerator {
     	LottoZahl[] alleLottozahlenArray = new LottoZahl[ _maxLottoZahl ];
         for ( int i = 0; i < alleLottozahlenArray.length; i++ ) {
 
-            alleLottozahlenArray[i] = new LottoZahl( i+1 );
+            alleLottozahlenArray[i] = new LottoZahl( i + 1 );
         }    	 
          
         // "durchmischen": Lottozahlen in Array nach Zufallszahl sortieren
         Arrays.sort( alleLottozahlenArray );
                     	        
         int[] ergebnisArray = new int[ _anzahlLottoZahlen ];
-        for (int i = 0; i < _anzahlLottoZahlen; i++) {
+        for ( int i = 0; i < _anzahlLottoZahlen; i++ ) {
 
             ergebnisArray[i] = alleLottozahlenArray[i].getLottozahl();
         }
         
+        Arrays.sort( ergebnisArray );
         
     	return ergebnisArray;
     }
@@ -77,8 +78,9 @@ public class LottozahlenGenerator {
     /**
      * Zahlentipp für Lotto erzeugen unt als String zurückgegeben.
      *
-     * @return Array mit Lotto-Tipp (die Zahlen, die man auf dem 
-     *         Lottoschein ankreuzen soll)
+     * @return String mit Lotto-Tipp (die Zahlen, die man auf dem 
+     *         Lottoschein ankreuzen soll); die einzelnen Zahlen
+     *         sind mit Tabs separiert
      */
     public String erzeugeTippAlsString() {
     	
@@ -88,7 +90,7 @@ public class LottozahlenGenerator {
     	for ( int zahl : tippArray ) {
     		
     		sb.append( zahl );
-    		sb.append( ' '  );
+    		sb.append( '\t'  );
     	}
     	
     	return sb.toString();

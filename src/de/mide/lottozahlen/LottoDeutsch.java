@@ -10,11 +10,17 @@ public class LottoDeutsch {
 	
 	public static void main( String[] args ) throws LottoException {
 
+		System.out.println();
+		
 		LottozahlenGenerator generator = new LottozahlenGenerator( 6, 49 );
 		
-		String tippString = generator.erzeugeTippAlsString();
+		for ( int i = 1; i <= 5; i++ ) {
 		
-		System.out.println( "\n" + tippString + "\n" );		
+			String tippString = generator.erzeugeTippAlsString();
+			System.out.println( tippString );
+		}
+				
+		System.out.println();
 	}
 	
 }
