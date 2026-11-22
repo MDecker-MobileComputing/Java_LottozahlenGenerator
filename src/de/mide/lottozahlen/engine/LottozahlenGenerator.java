@@ -96,7 +96,7 @@ public class LottozahlenGenerator {
 	    	for ( int zahl : tippArray ) {
 	    		
 	    		sb.append( zahl );
-	    		sb.append( '\t'  ); // Tabulator
+	    		sb.append( '\t' ); // Tabulator
 	    	}
 	    	
 	    	return sb.toString();

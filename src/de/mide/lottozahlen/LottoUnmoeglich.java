@@ -10,6 +10,13 @@ import de.mide.lottozahlen.engine.LottozahlenGenerator;
  */
 public class LottoUnmoeglich {
 	
+	/**
+	 * Einstiegsmethode für Programmausführung.
+	 * 
+	 * @param args Wird nicht ausgewertet 
+	 * 
+	 * @throws LottoException Ungültige Lottokonfiguration 
+	 */
 	public static void main( String[] args ) throws LottoException {
 
 		System.out.println();
