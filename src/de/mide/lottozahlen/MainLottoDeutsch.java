@@ -5,10 +5,9 @@ import de.mide.lottozahlen.engine.LottozahlenGenerator;
 
 
 /**
- * Programm für Test von Fehlerfall: aus den Zahlen von 1 bis 6 sollen 49 
- * eindeutige Zahlen ausgewählt werden
+ * Programm, um einen Tipp für deutsches Zahlenlotto "6 aus 49" zu erzeugen.
  */
-public class LottoUnmoeglich {
+public class MainLottoDeutsch {
 	
 	/**
 	 * Einstiegsmethode für Programmausführung.
@@ -21,7 +20,7 @@ public class LottoUnmoeglich {
 
 		System.out.println();
 		
-		LottozahlenGenerator generator = new LottozahlenGenerator( 49, 6 );
+		LottozahlenGenerator generator = new LottozahlenGenerator( 6, 49 );
 		
 		for ( int i = 1; i <= 5; i++ ) {
 		
