@@ -1,5 +1,6 @@
 package de.mide.lottozahlen.engine;
 
+
 /**
  * Eigene Exception-Klasse für ungültige Konfigurationen
  * des Lottozahlengenerators.

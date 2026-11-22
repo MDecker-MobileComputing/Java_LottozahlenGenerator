@@ -3,6 +3,7 @@ package de.mide.lottozahlen;
 import de.mide.lottozahlen.engine.LottoException;
 import de.mide.lottozahlen.engine.LottozahlenGenerator;
 
+
 /**
  * Programm für Test von Fehlerfall: aus den Zahlen von 1 bis 6 sollen 49 
  * eindeutige Zahlen ausgewählt werden
@@ -18,10 +19,9 @@ public class LottoUnmoeglich {
 		for ( int i = 1; i <= 5; i++ ) {
 		
 			String tippString = generator.erzeugeTippAlsString();
-			System.out.println( tippString );
+			System.out.println( "Tipp " + i + ": " + tippString + "\n" );
 		}
 				
 		System.out.println();
-	}
-	
+	}	
 }

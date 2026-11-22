@@ -2,8 +2,13 @@ package de.mide.lottozahlen.engine;
 
 import java.util.Arrays;
 
+
+/**
+ * Klasse zum Erzeugen von Lottozahlen.
+ */
 public class LottozahlenGenerator {
 
+	
     /** Anzahl Zahlen für den zu erzeugenden Tipp, z.B. "6" für deutsches Zahlenlotto "6 aus 49". */
     private int _anzahlLottoZahlen;
 
@@ -96,5 +101,4 @@ public class LottozahlenGenerator {
 	    	
 	    	return sb.toString();
     }
-
 }

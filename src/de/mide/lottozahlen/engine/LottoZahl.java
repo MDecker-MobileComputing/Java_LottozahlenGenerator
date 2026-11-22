@@ -1,5 +1,6 @@
 package de.mide.lottozahlen.engine;
 
+
 /**
  * Ein Objekt dieser Klasse enthält eine Lottozahl sowie
  * eine Zufallszahl. Die Zufallszahl wird benötigt, um
@@ -28,6 +29,7 @@ public class LottoZahl implements Comparable {
 		_zufallszahl = Math.random();
 	}
 	
+	
 	/**
 	 * Getter für die von diesem Objekt gespeicherte Lottozahl.
 	 * 
@@ -35,6 +37,7 @@ public class LottoZahl implements Comparable {
 	 */
 	public int getLottozahl() { return _lottozahl; }
 
+	
 	/**
 	 * Einzige Methode aus Interface {@code Comparable}.
 	 * 
@@ -56,6 +59,5 @@ public class LottoZahl implements Comparable {
 			
 			return -1;
 		}
-	}
-	
+	}	
 }
