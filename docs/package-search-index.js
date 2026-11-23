@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"Alle Packages","u":"allpackages-index.html","k":"18"},{"l":"de.mide.lottozahlen"},{"l":"de.mide.lottozahlen.engine"}];updateSearchResults();
