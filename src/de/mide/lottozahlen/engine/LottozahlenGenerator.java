@@ -60,7 +60,7 @@ public class LottozahlenGenerator {
      */
     public int[] erzeugeTipp() {
     	
-    	LottoZahl[] alleLottozahlenArray = new LottoZahl[ _maxLottoZahl ];
+    		LottoZahl[] alleLottozahlenArray = new LottoZahl[ _maxLottoZahl ];
         for ( int i = 0; i < alleLottozahlenArray.length; i++ ) {
 
             alleLottozahlenArray[i] = new LottoZahl( i + 1 );

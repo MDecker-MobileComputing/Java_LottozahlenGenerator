@@ -43,7 +43,8 @@ public class LottoZahl implements Comparable {
 	 * 
 	 * @return {@code 1}, wenn die im aufrufenden Objekt enthaltene Zufallszahl
 	 *         kleiner als die Zufallszahl in {@code anderesObjekt} ist, ansonsten
-	 *         {@code -1}
+	 *         {@code -1}. Den Fall, dass beide double-Zufallszahlen gleich sind,
+	 *         können wir vernachlässigen.
 	 */
 	@Override
 	public int compareTo( Object anderesObjekt ) {

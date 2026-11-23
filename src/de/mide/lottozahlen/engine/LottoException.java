@@ -7,7 +7,7 @@ package de.mide.lottozahlen.engine;
  */
 @SuppressWarnings("serial")
 public class LottoException extends Exception {
-
+	
 	/**
 	 * Konstruktor zum erzeugen einer Fehlermeldung
 	 * 
